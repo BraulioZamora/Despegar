@@ -1,0 +1,14 @@
+package com.despegar.hf.echo.service;
+
+public class EchoService {
+
+    public String echo(String msg) {
+        return msg;
+
+    }
+
+    public String echoEchanced(String msg) {
+        return msg + content;
+    }
+
+}

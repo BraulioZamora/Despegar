@@ -1,0 +1,3 @@
+INDEX VERSION 1.126
+C:\Users\admindesp\Documents\Braulio\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\535578249.index
+\echo-web\src\main\java

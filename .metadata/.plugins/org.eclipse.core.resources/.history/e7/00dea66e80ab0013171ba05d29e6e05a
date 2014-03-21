@@ -1,0 +1,17 @@
+package figuras;
+
+public class Circle extends Figure {	
+private Double radio;
+public Circle(Double radio) {
+	this.radio = radio;
+	this.type = "R";
+}
+public Double perimeter(){
+	return  this.radio * Math.PI;
+}
+
+public Double area(){
+	return this.radio * Math.PI * Math.PI;
+}
+
+}

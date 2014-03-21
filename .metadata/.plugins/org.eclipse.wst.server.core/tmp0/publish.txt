@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Mon Mar 17 13:01:26 ART 2014
+org.eclipse.jst.j2ee.server\:echo-domain=WEB-INF/lib/echo-domain-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\admindesp\\.m2\\repository\\org\\springframework\\spring-web\\3.2.1.RELEASE\\spring-web-3.2.1.RELEASE.jar=WEB-INF/lib/spring-web-3.2.1.RELEASE.jar

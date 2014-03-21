@@ -1,0 +1,11 @@
+package figuras;
+
+public class FigureFactory {
+	static public void main (String[] args){
+		Figure f = new ;
+		Double area = f.area();
+		Double perimetro = f.perimeter();
+		String FType = f.getType();
+	}
+
+}
