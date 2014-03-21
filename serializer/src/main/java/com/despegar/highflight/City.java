@@ -1,11 +1,18 @@
 package com.despegar.highflight;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+
+import au.com.bytecode.opencsv.CSVWriter;
 
 public class City implements Comparable <City>
 	{
-		static public void main(String[]args){
+		static public void main(String[]args) throws IOException{
 			City c1 =new City();
 			c1.setName ("NYC");
 			c1.setPopulation (new Integer (7500000));
@@ -22,7 +29,22 @@ public class City implements Comparable <City>
 			List<City> l = new ArrayList <City>(); 
 			l.add(c1);
 			l.add(c2);
-	   }
+		    Collections.sort(1);
+		    
+            for(City city:1){
+            	System.out.println(city);
+            }
+			
+			File f = new File("C:/cities.csv");
+			Writer w = new FileWriter(f);
+			CSVWriter writer = new CSVWriter(w,CSWriter.DEFAULT_SEPARATOR,CSWriter.DEFAULT_QUOTE_CHARACTER,"\c\r");
+			for(City city:1){
+		    String[] repr = city.toArray();
+			writer.writeNext(repr);
+			}
+			}
+		
+	   
 
 		private Integer population;
 		 private String name;
@@ -40,6 +62,14 @@ public class City implements Comparable <City>
 
 		public String getName() {
 			return name;
+		}
+		
+		public String[] toArray(){
+			String[] array = new String[3];
+			array[0] = this.name;
+			array[1] = String.valueOf(this.population);
+			array[2] = String.valueOf(this.area);
+			return array;
 		}
 
 		public void setName(String name) {
