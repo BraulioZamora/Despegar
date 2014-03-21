@@ -14,6 +14,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\admindesp\Documents\Braulio\serializer"/>
 			<item value="C:\Users\admindesp\Documents\Braulio\echo"/>
 		</list>
 		<list key="projectNameTemplate">
